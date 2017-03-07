@@ -10,6 +10,7 @@
 	<name>microservices-arq</name>
 
 	<modules>
+		<module>config-server-artifact</module>
 		<module>data-artifact</module>
 		<module>entities-api</module>
 	</modules>
@@ -22,6 +23,7 @@
 		<app.final.name>${app.name}-${app.version}</app.final.name>
 
 		<!-- Config Server -->
+		<app.config.server.name>Spring Cloud Config Server Default</app.config.server.name>
 		<app.config.server.uri>http://localhost</app.config.server.uri>
 		<app.config.server.port>8001</app.config.server.port>
 		<app.config.server.repo.uri>https://github.com/vikodrk/vk_repo</app.config.server.repo.uri>
