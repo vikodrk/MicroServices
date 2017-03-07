@@ -13,6 +13,7 @@
 		<module>config-server-artifact</module>
 		<module>data-artifact</module>
 		<module>entities-api</module>
+		<module>eureka-server-artifact</module>
 	</modules>
 
 	<properties>
