@@ -6,7 +6,6 @@ info:
     info: Mont debit card Micro Service DEV
 
 logging:
-  file: ${spring.application.name}.log
   level:
     root: INFO
   pattern:
