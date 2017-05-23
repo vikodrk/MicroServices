@@ -18,7 +18,7 @@ custom:
 eureka:
   client:
     service-url:
-      clone-zone: http://localhost:8080/eureka #https://eureka-server-vk91.cfapps.io/eureka
+      clone-zone: http://localhost:8010/eureka #https://eureka-server-vk91.cfapps.io/eureka
 
 ecs:
   crud:
