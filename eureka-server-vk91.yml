@@ -1,0 +1,6 @@
+server:
+  port: ${PORT:${SERVER_PORT:0}}
+application:
+  custom:
+    properties:
+      info: "Eureka Server para Pruebas PCF."
