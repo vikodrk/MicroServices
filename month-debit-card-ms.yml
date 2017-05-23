@@ -18,7 +18,7 @@ custom:
 eureka:
   client:
     service-url:
-      default-zone: https://eureka-server-vk91.cfapps.io/
+      clone-zone: https://eureka-server-vk91.cfapps.io/
 
 ecs:
   crud:
