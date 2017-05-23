@@ -1,0 +1,41 @@
+server:
+  port: ${PORT:${SERVER_PORT:0}}
+  
+info:
+  response:
+    info: Mont debit card Micro Service DEV
+
+logging:
+  file: ${spring.application.name}.log
+  level:
+    root: INFO
+  pattern:
+    console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(%-40.40logger){cyan} %clr(%L) %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}"
+    
+custom:
+  properties:
+    statistics_url: http://some-url/
+    
+eureka:
+  client:
+    service-url:
+      default-zone: https://eureka-server-vk91.cfapps.io/
+
+ecs:
+  crud:
+    app:
+      name: statement-account-card-ecs
+      cut:
+        endpoint: /AccountManagement/AccountDetails/V1/StatementAccountCardECS/CurrentCycle
+      not:
+        cut:
+          endpoint: /AccountManagement/AccountDetails/V1/StatementAccountCardECS/LastCycle
+tandem:
+  crud:
+    app:
+      name: TANDEM-CRUD
+      cut:
+        endpoint: TANDEM_CUT_ENDPOINT
+      not:
+        cut:
+          endpoint: TANDEM_NOT_CUT_ENDPOINT
