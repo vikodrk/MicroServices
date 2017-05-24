@@ -1,0 +1,8 @@
+
+server:
+  port: ${PORT:${SERVER_PORT:0}}
+  
+application:
+  custom:
+    properties:
+      messages: "Te amo mucho mi amor :3, Eres lo maximo! no lo olvides :D!, Ya te dije lo hermosa que eres?, Te amoooooooooooo mi vida :3, Adoro cuando sonries =3"
